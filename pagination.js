@@ -1,3 +1,4 @@
+//<![CDATA[
 var postperpage=3; var numshowpage=4; var prevpage ='Previous'; var nextpage ='Next'; var urlactivepage=location.href; var home_page="/";
 var nopage, type, postnumber, lblname1;
 
@@ -46,3 +47,4 @@ function finddatepost(a) {
     else var r = "/search/label/" + lblname1 + "?updated-max=" + s + "&max-results=" + postperpage + "#PageNo=" + nopage;
     location.href = r
 }
+//]]>
