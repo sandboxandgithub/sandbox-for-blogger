@@ -1,3 +1,6 @@
+var postperpage=3; var numshowpage=4; var prevpage ='Previous'; var nextpage ='Next'; var urlactivepage=location.href; var home_page="/";
+var nopage, type, postnumber, lblname1;
+
 function pagination(a) {
     var e = "";
     leftnum = parseInt(numshowpage / 2), leftnum == numshowpage - leftnum && (numshowpage = 2 * leftnum + 1), start = postnumber - leftnum, start < 1 && (start = 1), maximum = parseInt(a / postperpage) + 1, maximum - 1 == a / postperpage && (maximum -= 1), end = start + numshowpage - 1, end > maximum && (end = maximum), e += "<span class='totalpages'>Page " + postnumber + " of " + maximum + "</span>";
@@ -43,5 +46,5 @@ function finddatepost(a) {
     else var r = "/search/label/" + lblname1 + "?updated-max=" + s + "&max-results=" + postperpage + "#PageNo=" + nopage;
     location.href = r
 }
-var nopage, type, postnumber, lblname1;
+
 bloggerpage();
