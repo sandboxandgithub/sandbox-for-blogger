@@ -1,5 +1,7 @@
 //<![CDATA[
 
+var a_rc = 5; var m_rc = false; var n_rc = false; var o_rc = 100;
+
 function showrecentcomments(json){
     for(var i=0;i<a_rc;i++){
         var b_rc=json.feed.entry[i];
