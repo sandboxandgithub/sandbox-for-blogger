@@ -1,1 +1,3 @@
+//<![CDATA[
 bloggerpage();
+//]]>
