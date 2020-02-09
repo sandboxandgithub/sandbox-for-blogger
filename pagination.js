@@ -46,5 +46,3 @@ function finddatepost(a) {
     else var r = "/search/label/" + lblname1 + "?updated-max=" + s + "&max-results=" + postperpage + "#PageNo=" + nopage;
     location.href = r
 }
-
-bloggerpage();
